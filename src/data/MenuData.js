@@ -1,14 +1,14 @@
 const menuData = [
   {
-    title: "About",
+    title: "Início",
     link: "/about",
   },
   {
-    title: "Home",
+    title: "Sobre",
     link: "/Home",
   },
   {
-    title: "Rentals",
+    title: "Vendas",
     link: "/rentals",
   },
 ];

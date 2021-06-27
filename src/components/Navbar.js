@@ -12,9 +12,10 @@ const Nav = styled.div`
   padding: 1rem 2rem;
   z-index: 100;
   width: 100%;
+  background: #000d1a;
   top: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
 `;
 
 const NavLink = css`
@@ -60,6 +61,10 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
   color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0px 5px;
   ${NavLink}
 `;
 
@@ -88,7 +93,7 @@ const Navbar = ({ toogle }) => {
         })}
       </NavMenu>
       <NavBtn>
-        <Button primary={"true"}>Contato</Button>
+        <Button primary={false}>Contato</Button>
       </NavBtn>
     </Nav>
   );

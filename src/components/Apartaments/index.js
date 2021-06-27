@@ -10,8 +10,6 @@ const FadeInAnimation = keyframes`
   z-index: 10;
 }
 100%{
-     transform: translateX(15px);
-      z-index: 10;
 }
 
 `;
@@ -26,27 +24,39 @@ const Container = styled.section`
   width: 100%;
   margin: 0.2rem 0;
   min-height: 500px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const ContainerLeft = styled.div`
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 4rem;
   display: flex;
   justify-content: center;
+  width: 55%;
+  border-radius: 5px;
   flex-direction: column;
   background: #fff;
   box-shadow: 0 0.5rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
   color: #fff;
   transform: translateX(15px);
-  z-index: 2;
+  z-index: 10;
+  @media screen and (max-width: 950px) {
+    transform: translateX(0);
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+  }
   &:hover,
   &:active {
-    animation: ${FadeInAnimation} 1s ease-in forwards;
+    filter: brightness(1.1);
   }
 
   h1 {
     color: #08091f;
     font-weight: 700;
+    font-size: 30px;
     padding: 1rem 0;
   }
 
@@ -58,6 +68,15 @@ const ContainerLeft = styled.div`
 `;
 const ContainerRight = styled.div`
   z-index: 4;
+  width: 45%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const Apartaments = () => {

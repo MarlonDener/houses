@@ -8,7 +8,8 @@ import menuData from "./data/MenuData";
 import InfoSection from "./components/InfoSection";
 import { InfoData } from "./data/InfoData";
 import Apartaments from "./components/Apartaments";
-
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,6 +25,8 @@ function App() {
       <InfoSection {...InfoData} reverse={false} />
       <Apartaments />
       <InfoSection {...InfoData} reverse={true} />
+      <Contact />
+      <Footer />
     </>
   );
 }
