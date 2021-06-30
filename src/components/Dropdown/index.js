@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { Button } from "../Styles/Button";
 import { FaTimes } from "react-icons/fa";
 
@@ -71,7 +70,7 @@ const DropDown = ({ menu, isOpen, toggle }) => {
       <DropdownWrapper>
         <DropdownMenu>
           {menu.map((itemMenu, index) => {
-            return <DropdownLink key={index}>{itemMenu.title}</DropdownLink>;
+            return <DropdownLink key={index} href={itemMenu.link}>{itemMenu.title}</DropdownLink>;
           })}
         </DropdownMenu>
         <BtnWrap>

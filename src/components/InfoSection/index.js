@@ -46,6 +46,7 @@ const ColumnLeft = styled.div`
     gap: 8px;
     @media screen and (max-width: 768px) {
       margin-top: 2rem;
+    font-size: 1.5rem;
     }
   }
   P {
@@ -115,7 +116,7 @@ const InfoSection = ({
           <h1><AiOutlineGlobal />{heading}</h1>
           <p>{paragraph}</p>
           <p>{paragraph2}</p>
-          <Button primary="true">
+          <Button primary="true" href="#contato">
             Ver imovél
           </Button>
         </ColumnLeft>

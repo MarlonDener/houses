@@ -1,22 +1,11 @@
 import React, {useEffect} from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { InfoMiddle } from "../../data/InfoData";
 import { Button } from "../Styles/Button";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import Aos from "aos";
 import "aos/dist/aos.css"
 
-const FadeInAnimation = keyframes`  
-0%{
-  transform: translateX(30px);
-}50%{
-  transform: translateX(0px);
-  z-index: 10;
-}
-100%{
-}
-
-`;
 
 const Container = styled.section`
   padding: 0 1rem;
@@ -38,6 +27,7 @@ const ContainerLeft = styled.div`
   display: flex;
   justify-content: center;
   width: 55%;
+  margin: 5px 5px;
   border-radius: 5px;
   flex-direction: column;
   background: rgba(247,245,250, 1);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import GlobalStyle from "./Global/GlobalStyles";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Slider";
