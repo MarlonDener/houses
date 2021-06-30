@@ -79,9 +79,9 @@ const HeroContent = styled.div`
     max-width: 800px;
   }
   p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.4rem;
   }
 `;
 
@@ -167,7 +167,7 @@ const Hero = ({ slides }) => {
                 <HeroSlider>
                   <HeroImage src={slideImage.image} alt={slideImage.alt} />
                   <HeroContent>
-                    <h1>{slideImage.title}</h1>
+                    <h1 id="inicio">{slideImage.title}</h1>
                     <p>{slideImage.price}</p>
                     <Button
                       to={slideImage.path}

@@ -3,12 +3,17 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   ${() => css`
     display: flex;
+    border-top: 6px solid #000d1a;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     max-width: 1000px;
     width: 99%;
-    padding: 40px 20px;
+    padding-top: 10px;
+    padding-bottom:40px;
+    padding-left: 10px;
+    padding-right:10px;
+
     flex-direction: column;
     > h1 {
       margin-top: 20px;

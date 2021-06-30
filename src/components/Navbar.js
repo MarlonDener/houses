@@ -59,7 +59,7 @@ const NavMenu = styled.div`
   }
 `;
 
-const NavMenuLinks = styled(Link)`
+const NavMenuLinks = styled.a`
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -86,14 +86,14 @@ const Navbar = ({ toogle }) => {
       <NavMenu>
         {menuData.map((item, index) => {
           return (
-            <NavMenuLinks to={item.link} key={index}>
+            <NavMenuLinks href={item.link} key={index}>
               {item.title}
             </NavMenuLinks>
           );
         })}
       </NavMenu>
       <NavBtn>
-        <Button primary={false}>Contato</Button>
+        <Button primary={false} href="#contato">Contato</Button>
       </NavBtn>
     </Nav>
   );

@@ -5,8 +5,8 @@ import imageFour from "../images/apartament4.jpg";
 
 export const SliderData = [
   {
-    title: "Casa super confortável em São Paulo",
-    price: "R$ 4,280,000",
+    title: "Residência luxuosa em Goiânia",
+    price: "R$ 5,280,000",
     path: "/homes",
     label: "Ver Casa",
     image: imageOne,
@@ -14,14 +14,14 @@ export const SliderData = [
   },
   {
     title: "Casa super confortável em São Paulo",
-    price: "R$ 4,280,000",
+    price: "R$ 1,280,000",
     path: "/homes",
     label: "Ver Casa",
     image: imageTwo,
     alt: "Casa - SP",
   },
   {
-    title: "Casa super confortável em São Paulo",
+    title: "Casa perto da praia de Santos - SP",
     price: "R$ 4,280,000",
     path: "/homes",
     label: "Ver Casa",
@@ -29,8 +29,8 @@ export const SliderData = [
     alt: "Casa - SP",
   },
   {
-    title: "Casa super confortável em São Paulo",
-    price: "R$ 4,280,000",
+    title: "Casa incrível em Rio Grande do Sul",
+    price: "R$ 1,280,000",
     path: "/homes",
     label: "Ver Casa",
     image: imageFour,

@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styled, { keyframes } from "styled-components";
 import { InfoMiddle } from "../../data/InfoData";
 import { Button } from "../Styles/Button";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const FadeInAnimation = keyframes`  
 0%{
   transform: translateX(30px);
@@ -36,12 +40,13 @@ const ContainerLeft = styled.div`
   width: 55%;
   border-radius: 5px;
   flex-direction: column;
-  background: #fff;
+  background: rgba(247,245,250, 1);
   box-shadow: 0 0.5rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
   color: #fff;
   transform: translateX(15px);
   z-index: 10;
+  transition:0.3s ease-in-out all;
   @media screen and (max-width: 950px) {
     transform: translateX(0);
   }
@@ -50,7 +55,7 @@ const ContainerLeft = styled.div`
   }
   &:hover,
   &:active {
-    filter: brightness(1.1);
+    opacity: 0.99;
   }
 
   h1 {
@@ -58,6 +63,9 @@ const ContainerLeft = styled.div`
     font-weight: 700;
     font-size: 30px;
     padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   p {
@@ -80,12 +88,17 @@ const ContainerRight = styled.div`
 `;
 
 const Apartaments = () => {
+ useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <Container>
-      <ContainerLeft>
-        <h1>{InfoMiddle.heading}</h1>
+      <ContainerLeft data-aos="flip-left">
+        
+        <h1 data-aos="fade-left"><AiOutlineAntDesign />{InfoMiddle.heading}</h1>
         <p>{InfoMiddle.paragraph}</p>
-        <Button primary={false}>Ver detalhes</Button>
+        <Button primary={true}>Ver detalhes</Button>
       </ContainerLeft>
 
       <ContainerRight>
