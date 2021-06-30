@@ -1,4 +1,4 @@
-<h2>Houses | Apartaments</h2>
+<h2>Houses</h2>
 
 ![image](https://user-images.githubusercontent.com/70349830/123500314-a1128400-d613-11eb-8f0b-59e5c0e10d2d.png)
 
