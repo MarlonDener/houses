@@ -8,14 +8,14 @@ Project in development
 <br>
 
 <br>
-## 🧪 Technologies
+🧪 Technologies
 
 This project was developed using the following technologies:
 
 - [React](https://reactjs.org)
 - [Styled-Components](https://styled-components.com/)
 
-## 🚀 Getting started
+🚀 Getting started
 
 Clone the project and access the folder.
 
