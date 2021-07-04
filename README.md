@@ -2,10 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/70349830/123500314-a1128400-d613-11eb-8f0b-59e5c0e10d2d.png)
 
-<br>
-
-<br>
-🚀 Getting started
+## 🚀 Getting started
 
 Clone the project and access the folder.
 
